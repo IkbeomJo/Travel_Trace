@@ -1,0 +1,277 @@
+
+html,
+body {
+  margin: auto;
+  box-sizing: border-box;
+  padding-top: 2rem;
+}
+li{
+  text-align: center;
+}
+.navbar {
+  background-color: #ffffff;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+  top: -20px;
+  left: 80px;
+  right: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  width:90%;
+  margin-right:0px;
+}
+.more{
+  display: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:link{
+  text-decoration: none;
+  color: black;
+}
+.nav_header{
+display:flex;
+justify-content: space-between;
+
+}
+.logo{
+  font-size: 38px;
+  color: black;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.logo > img{
+    width:40px;
+    height:40px;
+    position: relative;
+    top:-3px;  
+}
+
+.navbar_menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0px;
+  position: relative;
+  left:30px;
+  font-size: 18px;
+}
+
+.navbar_menu > li{
+    width: 200px;
+}
+
+.navbar_menu > li > a{
+  border-radius: 20px;
+}
+
+
+.modal-title{
+    font-size:42px;
+    text-align: center;
+    margin-top:40px;
+}
+.close{
+    position: relative;
+    top:-90px;
+    size: 50px;
+}
+
+input[type="text"], input[type="password"] { 
+    height: 60px;
+    width:350px;
+    border-radius:50px;
+    margin-top:20px;
+    padding-left:30px;
+    border:1px solid gray;
+}
+
+input[type="button"], input[type="submit"]{
+    margin-top:30px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    width:170px;
+    height:50px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+.modal-body input[type="button"]:hover{
+    background-color:black;
+    color:white;
+}
+.modal-body input[type="submit"]:hover{
+  background-color:black;
+    color:white;
+}
+.find_password{
+  margin-top:5px;
+  margin-bottom: 30px;
+}
+.find_password > a{
+  color:gray;
+  font-weight: bold;
+}
+.mainframe{
+  position: relative;
+  top:0px;
+  margin-bottom: 50px;
+}
+
+.submenu{
+    list-style: none; 
+    position: relative;
+    left:-40px;
+    display: none;
+    height:400px;
+    margin-top:10px;
+}
+.submenu>li{
+	width: 200px;
+	background-color: #ffffff;
+  text-align: center;
+}
+.submenu>li>a{
+	line-height: 40px;
+	font-size: 18px;
+	text-align: center;
+	color: black;
+}
+.submenu>li:hover>a{
+	text-decoration: underline;
+}
+.login_api{
+  margin-top: 10px;
+}
+
+.item>img{
+  width:85%;
+}
+
+.items{
+  height: inherit; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+.item{
+  height: inherit;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  display: none;
+}
+.active{
+  display: flex;
+  height: inherit;
+  width: inherit;
+}
+.mainframe > button, .mainframe > button:active, .mainframe > button:focus{
+  position : absolute; /* 문서 흐름에서 제외되고, 상위 포지션 요소 기준으로 배치 */
+  top: 40%;
+  transform: translateY(-50%);
+  width: 0PX; height: 0px;    
+  opacity: 0.5;
+  display: none;
+  border: none;
+}
+
+.stepper{
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  position:absolute;
+  bottom: 10px;left:40%;
+}
+.step{
+  width: 50px; 
+  height: 50px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.active-step{
+  background-color: brown;
+}
+.next{
+  right:280px;
+}
+.prev{
+  left:160px;
+}
+.mainframe > button > img{
+  width:6vw;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  height: 90px;
+  bottom: 0px;
+  position: relative;
+  border-top: 1px solid #c4c4c4;
+  padding-top: 15px;
+  color: #808080;
+  font-size: 11px;
+}
+
+.github{
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  left:20px;
+}
+
+.footer p {
+  display: inline-block;
+  position: relative;
+  margin-top: 0; 
+  margin-bottom: 0;
+  left:10px;
+}
+
+.footer p span {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+  .navbar_menu {
+    align-items: center;
+    width: 100%;
+    left:0px;
+    display: none;
+    height: 650px;
+  }
+  .navbar_menu > li {
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+    margin-bottom: 130px;
+  }
+
+  hr:first-of-type{
+    display: none;
+  }
+  .more{
+    display: block;
+  }
+
+  .submenu{
+    display: none;
+    height: auto;
+    top:-42px;
+    left:30px;
+    
+  }
+  .submenu li{
+    float: left;
+    overflow:auto;
+  }
+  
+}
