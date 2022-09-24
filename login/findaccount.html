@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Travel Trace</title>
+<link href="signup.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500&display=swap" rel="stylesheet">
+<style>
+    .find_title{
+        margin-top: 30px;
+        margin-left: 50px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 32px;
+
+    }
+    .find_content{
+        margin-left: 50px;
+        font-size: 16px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight:100;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    input{
+        width:430px;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+
+    hr{
+        margin-top:80px;
+        margin-bottom: 80px;
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <div class="logo" onclick="location.href='../index.html'">
+            <img src="../images/main.png">
+            <p class="title_top"><b>Travel</b> Trace</p>
+        </div>
+    </nav>
+<div class="main">
+   <div class="find_title">내 계정 ID 찾기</div>
+   <div class="find_content">내 계정 ID를 복구하려면 전화번호를 입력하세요.</div>
+   <form action="javascript:alert('구현안됨')">
+       <input type="text" name="userphone" placeholder="- 제외" pattern="[0-9]+" maxlength=11 minlength=11  required> 
+       <input type="submit" value="확인"> 
+   </form>
+
+   <hr>
+   <div class="find_title">내 계정 비밀번호 찾기</div>
+   <div class="find_content">내 계정 비밀번호를 복구하려면 ID와 전화번호를 입력하세요.</div>
+   <form action="javascript:alert('구현안됨')">
+    <input type="text" name="id" required placeholder="아이디"> <br> 
+    <input type="text" name="userphone" placeholder="전화번호" pattern="[0-9]+" maxlength=11 minlength=11  required> 
+    <input type="submit" value="확인"> 
+</form>
+
+</div>
+
+</body>
+</html>

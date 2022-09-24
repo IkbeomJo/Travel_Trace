@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>TRAVEL Trace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="world_main.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="../main.js"></script>
+    <style>
+      .mainframe{
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  gap:150px;
+  top:-10px;
+}
+
+.about_content{
+  position: relative;
+  right:5%;
+  top: 100px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 100;
+  font-size: 38px;
+}
+.about_content > hr{
+  width:60px;
+  border:2px solid black;
+  border-radius: 2px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.first_word{
+  color:red;
+  font-weight: 600;
+}
+
+.about_text{
+  font-size: 24px;
+}
+
+    </style>
+</head>
+<th:block th:fragment="setLogin(login)">
+<body>
+    <nav class="navbar">
+        <div class="nav_header">
+          <div class="more">
+            <img src="../images/more.png">
+          </div>
+          <div class="logo" onclick="location.href='../index.html'">
+            <img src="../images/main.png">
+            <b>Travel</b> Trace
+          </div>
+          
+          
+          <div class="login">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" style="background-color: white; border:0px">
+                <img src="../images/login.png" alt="로그인" >
+            </button>
+          </div>
+        </div>
+        <hr width="100%" align="left" color="gray" style="height:1px;">
+        <ul class="navbar_menu">
+            <li><a href="../About/about.html">&nbsp;&nbsp;About&nbsp;&nbsp;</a></li>
+            <li><a href="world_main.html">&nbsp;&nbsp;World&nbsp;&nbsp;</a>
+              <ul class="submenu">
+                <li><a href="china.html">China</a></li>
+                <li><a href="philippines.html">Philippines</a></li>
+                <li><a href="guam.html">Guam</a></li>
+                <li><a href="japan.html">Japan</a></li>
+                <li><a href="laos.html">Laos</a></li>
+                <li><a href="thailand.html">Thailand</a></li>
+                <li><a href="taiwan.html">Taiwan</a></li>
+              </ul>
+            </li>
+            <li><a href="../food/food_main.html">&nbsp;&nbsp;Food&nbsp;&nbsp;</a>
+              <ul class="submenu">
+                <li><a href="#">Noodle</a></li>
+                <li><a href="#">Rice</a></li>
+                <li><a href="#">Meat</a></li>
+                <li><a href="#">Other</a></li>
+              </ul>
+            </li>
+            <li><a href="#">&nbsp;&nbsp;Tour&nbsp;&nbsp;</a>
+              <ul class="submenu">
+                <li><a href="#">Tourist Distance</a></li>
+                <li><a href="#">Accommodation</a></li>
+                <li><a href="#">Activity</a></li>
+                <li><a href="#">Information</a></li>
+              </ul>
+            </li>
+            <li><a href="#">&nbsp;&nbsp;Community&nbsp;&nbsp;</a></li>
+            </div>
+            
+        </ul>
+        <hr width="100%" align="left" color="gray" style="height:1px;">  
+    </nav>
+
+    <div class="mainframe">
+      <img src="../images/taiwan1.jpg" width="50%" height="950px">
+
+      <div class="about_content">
+        <span class="first_word">T</span>aiwan<br><br>
+        <span class="first_word">T</span><span style="font-weight: 600;">aibei</span><br>
+        <hr align="left">
+        <p class="about_text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="footer">
+      <div class="github" onclick="location.href='https://github.com/ib0113'">
+        <img src="../images/github.png"><br>
+        Github
+      </div>
+      <p>
+          <span>저자 : IB</span><br>
+          <span>이메일 : ib0113@hs.ac.kr</span><br>
+          <span>연락처 : 010-2108-7320</span><br>
+          <span>Copyright 2022. IB. All Rights Reserved.</span>
+      </p>
+    </div>
+
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">로그인</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <img src="images/close.png">
+              </button>
+            </div>
+            <div class="modal-body">
+                <center>
+                <form action="javascript:alert('구현안됨')">
+                <input type="text" name="username" placeholder="아이디" required ><br>
+                <input type="password" name="password" placeholder="비밀번호" required><br>
+
+                <input type="submit" class="btn btn-secondary" id="btn-login" value="로그인">
+                <input type="button" class="btn btn-secondary" value="회원가입" onclick="location.href='../login/signup.html'">
+                <div class="find_password">
+                  <a href="../login/findaccount.html">아이디 또는 비밀번호를 잊으셨나요?</a>
+                </div>
+    
+                <div class="login_api">
+                    <a href="https://kauth.kakao.com/oauth/authorize?client_id=d860d38c992ca8bf5f07dcc3fd5122b9&redirect_uri=http://localhost:9090/member/auth/kakao/callback&response_type=code"><img src="../images/kakao_login_button.png"></a>
+                </div>
+    
+                <div class="login_api">
+                    <a href="https://accounts.google.com/o/oauth2/v2/auth?
+                    scope=https://www.googleapis.com/auth/analytics.readonly&
+                    access_type=offline&
+                    include_granted_scopes=true&state=state_parameter_passthrough_value&
+                    redirect_uri=http://localhost:8181/thkomeetB/account/googlesigncallback&response_type=code&client_id=711155811271-2f5eetje4gtic3lv2d6tlvmt3ne8fmm2.apps.googleusercontent.com"><img src="../images/google_login_button.png"></a>
+                </div>    
+                </form>
+                </center>   
+            </div>
+          </div>
+        </div>
+     </div>
+
+    
+
+
+</body>
+</th:block>
+</html>                                                                                                           
